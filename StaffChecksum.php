@@ -12,25 +12,38 @@ class StaffChecksum {
 
 
 
-    public function makeChecksum($staffNumber){
-
-      // echo $staffNumber[0];
+    public function makeChecksum($staffNumber,$checksumCode){
 
 
-        $array  = array_map('intval', str_split($staffNumber));
+        $array1  = array_map('intval', str_split($staffNumber));
+        $array  = array_map('self::multiply', $array1, $checksumCode);
+        $sum = 1+((array_sum($array))%17);
+       $t=  $this->checkAlphabet();
+      //  var_dump($t);
+    }
 
-            var_dump($array);
 
+    private function checkAlphabet(){
+
+        array_filter(range('A','Z'),[]);
+        foreach (range('A', 'Z') as $char) {
+            echo $char . "\n";
+        }
+
+    }
+
+
+    private function multiply($x,$y){
+
+
+        return $x*$y;
     }
 
 
     public function validateNumber($staffNumber,$numberLength)
     {
-
-        //return true if staff number has the right count and is an integer.
         return (count($staffNumber) == $numberLength && is_int($staffNumber));
 
-
 }
 
 
@@ -39,15 +52,15 @@ class StaffChecksum {
 
 }
 
-$checkSumCode = getallheaders()["checkSumCode"];
-$staffNumber = getallheaders()["staffNumber"];
-
-
-$staffNumber = "111111";
+//$checkSumCode = getallheaders()["checkSumCode"];
+//$staffNumber = getallheaders()["staffNumber"];
+const staffNumberLength = 6;
+$input = $_GET['input'];
+$staffNumber = $input;
 $checkSumCode =[7,5,3,1,11,13];
 $m = new StaffChecksum();
 //$m->validateNumber($staffNumber,6);
-$m->validateNumber($checkSumCode,6);
-$m->makeChecksum($staffNumber);
+$m->validateNumber($checkSumCode,staffNumberLength);
+$m->makeChecksum($staffNumber,$checkSumCode);
 
 
