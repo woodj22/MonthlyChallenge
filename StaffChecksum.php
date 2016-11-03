@@ -19,16 +19,27 @@ class StaffChecksum {
         $array  = array_map('self::multiply', $array1, $checksumCode);
         $sum = 1+((array_sum($array))%17);
        $t=  $this->checkAlphabet();
-      //  var_dump($t);
+    //   var_dump(array_sum($array));
     }
 
 
-    private function checkAlphabet(){
+     private function checkAlphabet(){
 
-        array_filter(range('A','Z'),[]);
+
+         //var_dump($ar);
+       $r= array_filter(range('A','Z'),'self::filterLetters');
+        var_dump($r);
         foreach (range('A', 'Z') as $char) {
             echo $char . "\n";
         }
+    return;
+
+    }
+
+    private function filterLetters ($k){
+
+        $ar = array("C","G","I","M","O","Q","U","V","Z");
+        return $k != array_search($k,$ar);
 
     }
 
