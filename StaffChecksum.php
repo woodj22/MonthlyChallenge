@@ -26,12 +26,14 @@ class StaffChecksum {
      private function checkAlphabet(){
 
 
+
+         $ar = array("C","G","I","M","O","Q","U","V","Z");
+         $newArray =  array_diff(range('A','Z'),$ar);
+
          //var_dump($ar);
-       $r= array_filter(range('A','Z'),'self::filterLetters');
-        var_dump($r);
-        foreach (range('A', 'Z') as $char) {
-            echo $char . "\n";
-        }
+      // $r= array_filter(range('A','Z'),'self::filterLetters');
+        //var_dump($r);
+
     return;
 
     }
@@ -39,7 +41,7 @@ class StaffChecksum {
     private function filterLetters ($k){
 
         $ar = array("C","G","I","M","O","Q","U","V","Z");
-        return $k != array_search($k,$ar);
+        return array_diff($k,$ar);
 
     }
 
