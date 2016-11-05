@@ -12,52 +12,47 @@ class StaffChecksum {
 
 
 
-    public function makeChecksum($staffNumber,$checksumCode){
+    public function calculateChecksumNumber($staffNumber,$checksumCode)
+    {
+
+        $staffNumberArray  = array_map('intval', str_split($staffNumber));
+        $multipliedArray  = array_map('self::multiply', $staffNumberArray, $checksumCode);
+        $sum = 1+((array_sum($multipliedArray))%17);
 
 
-        $array1  = array_map('intval', str_split($staffNumber));
-        $array  = array_map('self::multiply', $array1, $checksumCode);
-        $sum = 1+((array_sum($array))%17);
-       $t=  $this->checkAlphabet();
-    //   var_dump(array_sum($array));
+        return $sum;
     }
 
 
-     private function checkAlphabet(){
+     public function calculateAlphabet($ar)
+     {
 
-
-
-         $ar = array("C","G","I","M","O","Q","U","V","Z");
-         $newArray =  array_diff(range('A','Z'),$ar);
-
-         //var_dump($ar);
-      // $r= array_filter(range('A','Z'),'self::filterLetters');
-        //var_dump($r);
-
-    return;
+         $alphabetWithoutLetters =  array_diff(range('A','Z'),$ar);
+         $arrayStartFromOne =array_combine(range(1, count($alphabetWithoutLetters)), array_values($alphabetWithoutLetters));
+         return $arrayStartFromOne;
 
     }
 
-    private function filterLetters ($k){
-
-        $ar = array("C","G","I","M","O","Q","U","V","Z");
-        return array_diff($k,$ar);
+    public function calculateChecksum($alphabetArray,$key)
+    {
+        return $alphabetArray[$key];
 
     }
 
 
-    private function multiply($x,$y){
-
-
-        return $x*$y;
-    }
 
 
     public function validateNumber($staffNumber,$numberLength)
     {
         return (count($staffNumber) == $numberLength && is_int($staffNumber));
 
-}
+    }
+
+
+    private function multiply($x,$y)
+    {
+        return $x*$y;
+    }
 
 
 
@@ -72,8 +67,10 @@ $input = $_GET['input'];
 $staffNumber = $input;
 $checkSumCode =[7,5,3,1,11,13];
 $m = new StaffChecksum();
-//$m->validateNumber($staffNumber,6);
 $m->validateNumber($checkSumCode,staffNumberLength);
-$m->makeChecksum($staffNumber,$checkSumCode);
+$m->validateNumber($staffNumber,staffNumberLength);
+$checksumIndex = $m->calculateChecksumNumber($staffNumber,$checkSumCode);
+$alaphabet = $m->calculateAlphabet(["C","G","I","M","O","Q","U","V","Z"]);
+$m->calculateChecksum($alaphabet,$checksumIndex);
 
 
