@@ -1,0 +1,9 @@
+
+{
+  "name": "woodj22/StaffChecksum",
+  "autoload": {
+    "psr-0" : {
+      "woodj22\\CheckSum" : "src"
+    }
+  }
+}
