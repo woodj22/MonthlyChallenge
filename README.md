@@ -14,23 +14,12 @@ To use, please add this requirement to your `composer.json` requirements file.
 and this to the repositories:
 
 ```JSON
-"repositories" :[{
-            "type": "package",
-            "package": {
-                "name": "woodj22/StaffChecksum",
-                "version": "dev-master",
-                "source": {
-                    "url": "https://github.com/woodj22/StaffChecksum.git",
-                    "type": "git",
-                    "reference": "master"
-                },
-                "autoload": {
-                    "psr-0" : {
-                        "woodj22\\StaffChecksum" : "src"
-                    }
-                }
-            }
-        }]
+"repositories" :[
+           {
+            "type": "vcs",
+            "url": "https://github.com/woodj22/StaffChecksum.git"
+        }
+        ]
 ```
 
 then run a `composer update` .
