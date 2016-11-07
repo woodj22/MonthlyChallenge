@@ -19,7 +19,7 @@
             "woodj22\\StaffChecksum\\": "src/"
         },
       "psr-0" : {
-      "woodj22\\StaffChecksum" : "src/"
+      "woodj22\\StaffChecksum\\" : "src/"
     }
     },
     "minimum-stability": "stable"
