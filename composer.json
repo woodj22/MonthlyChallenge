@@ -1,9 +1,26 @@
 
+
+
 {
-  "name": "woodj22/StaffChecksum",
-  "autoload": {
-    "psr-0" : {
-      "woodj22\\CheckSum" : "src"
+
+"name": "woodj22/StaffChecksum",
+    "description": "calculate the suffix letter of a staff number.",
+    "keywords": ["laravel"],
+    "version": "master",
+    "license": "Public",
+    "authors": [
+        {
+            "name": "BBC",
+            "email": "joe.wood@bbc.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "woodj22\\StaffChecksum\\": "src/"
+        },
+      "psr-0" : {
+      "woodj22\\StaffChecksum" : "src/"
     }
-  }
+    },
+    "minimum-stability": "stable"
 }
