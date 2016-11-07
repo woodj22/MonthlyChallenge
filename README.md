@@ -5,7 +5,8 @@ To use, please add this requirement to your `composer.json` requirements file.
 ``` "require": {
 
     "woodj22/StaffChecksum": "dev-master"
-} ```
+} 
+```
 
 
 and this to the repositories:
