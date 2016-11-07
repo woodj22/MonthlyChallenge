@@ -91,7 +91,7 @@ class StaffChecksum {
 
 
 
-// const staffNumberLength = 6;
+ const staffNumberLength = 6;
 // $input = $_GET['input'];
 // $staffNumber = $input;
 // $checkSumCode =[7,5,3,1,11,13];
