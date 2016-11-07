@@ -6,8 +6,7 @@
  * Time: 22:37
  */
 
-namespace CheckSum;
-
+namespace woodj22\StaffChecksum\CheckSum;
 class StaffChecksum {
 
     protected $checksumCode;
@@ -87,11 +86,11 @@ class StaffChecksum {
 
 
 }
-//Uncomment below for stand alone php file.
-
 
 
  const staffNumberLength = 6;
+//Uncomment below for stand alone php file.
+
 // $input = $_GET['input'];
 // $staffNumber = $input;
 // $checkSumCode =[7,5,3,1,11,13];
