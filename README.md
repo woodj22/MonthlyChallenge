@@ -2,7 +2,9 @@
 
 To use, please add this requirement to your `composer.json` requirements file. 
 
-``` "require": {
+``` 
+
+"require": {
 
     "woodj22/StaffChecksum": "dev-master"
 } 
