@@ -28,7 +28,7 @@ and this to the repositories:
                 }
             }
         }]
-       ```
+```
 
 then run a `composer update` .
 
