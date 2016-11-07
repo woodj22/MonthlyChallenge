@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "woodj22\\StaffChecksum\\": "src/"
+            "woodj22\\StaffChecksum\\": "src/CheckSum"
         },
       "psr-0" : {
       "woodj22\\StaffChecksum\\" : "src/"
