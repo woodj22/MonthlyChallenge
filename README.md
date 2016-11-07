@@ -2,15 +2,15 @@
 
 To use, please add this requirement to your `composer.json` requirements file. 
 
-``"require": {
+``` "require": {
 
     "woodj22/StaffChecksum": "dev-master"
-}``
+} ```
 
 
 and this to the repositories:
 
-``{
+```{
             "type": "package",
             "package": {
                 "name": "woodj22/StaffChecksum",
@@ -27,7 +27,7 @@ and this to the repositories:
                 }
             }
         }
-       ``
+       ```
 
 then run a `composer update` .
 
