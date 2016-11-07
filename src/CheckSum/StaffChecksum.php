@@ -87,12 +87,15 @@ class StaffChecksum {
 
 
 }
+//Uncomment below for stand alone php file.
 
-const staffNumberLength = 6;
-$input = $_GET['input'];
-$staffNumber = $input;
-$checkSumCode =[7,5,3,1,11,13];
-$m = new StaffChecksum();
-$m->calculateChecksum($staffNumber,$checkSumCode);
+
+
+// const staffNumberLength = 6;
+// $input = $_GET['input'];
+// $staffNumber = $input;
+// $checkSumCode =[7,5,3,1,11,13];
+// $m = new StaffChecksum();
+// $m->calculateChecksum($staffNumber,$checkSumCode);
 
 
