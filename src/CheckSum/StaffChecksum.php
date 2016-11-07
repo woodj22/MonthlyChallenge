@@ -28,7 +28,7 @@ class StaffChecksum {
     }
 
 
-    public function calculateChecksum($checkSumCode,$staffNumber)
+    public function calculateChecksum($staffNumber ,$checkSumCode = [7,5,3,1,11,13])
 
     {
 
