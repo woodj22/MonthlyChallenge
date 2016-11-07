@@ -10,7 +10,8 @@ To use, please add this requirement to your `composer.json` requirements file.
 
 and this to the repositories:
 
-```{
+```JSON
+"repositories" :[{
             "type": "package",
             "package": {
                 "name": "woodj22/StaffChecksum",
@@ -26,7 +27,7 @@ and this to the repositories:
                     }
                 }
             }
-        }
+        }]
        ```
 
 then run a `composer update` .
