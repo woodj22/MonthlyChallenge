@@ -1,3 +1,15 @@
+
+
+To use, please add this requirement to your `composer.json` requirements file. 
+
+``"require": {
+
+    "woodj22/StaffChecksum": "dev-master"
+}``
+
+then run a `composer update` .
+
+
 # StaffChecksum
 Produces a checksum letter suffix from a six digit staff number. 
 
