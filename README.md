@@ -3,10 +3,6 @@
 # MonthlyChallenge
 Every month, a team  coding challenge is set. the rules are :
 
-
-
-Team Coding Challenge
-Rules:
 1. Write a small application to meet the test criteria in your chosen language:
 a. Angular and Javascript
 b. Objective-C
