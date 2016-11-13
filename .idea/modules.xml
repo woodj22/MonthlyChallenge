@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../MonthlyChallenge/.idea/StaffChecksum.iml" filepath="$PROJECT_DIR$/../MonthlyChallenge/.idea/StaffChecksum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MonthlyChallenge.iml" filepath="$PROJECT_DIR$/.idea/MonthlyChallenge.iml" />
     </modules>
   </component>
 </project>

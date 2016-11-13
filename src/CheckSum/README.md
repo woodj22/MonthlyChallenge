@@ -1,52 +1,10 @@
 
 
-To use, please add this requirement to your `composer.json` requirements file. 
-
-``` 
-
-"require": {
-
-    "woodj22/StaffChecksum": "dev-master"
-} 
-```
 
 
-and this to the repositories:
-
-```JSON
-"repositories" :[
-           {
-            "type": "vcs",
-            "url": "https://github.com/woodj22/StaffChecksum.git"
-        }
-        ]
-```
-
-then run a `composer update` .
-
-
-# StaffChecksum
+##StaffChecksum
 Produces a checksum letter suffix from a six digit staff number. 
 
-
-
-Team Coding Challenge
-Rules:
-1. You need to write a small application to meet the test criteria in your chosen language:
-a. Angular and Javascript
-b. Objective-C
-c. PHP
-2. You cannot use any additional libraries beyond what’s specified above.
-3. You get one point for each of the following:
-a. Each if statement
-b. Each else statement
-c. Each case statement
-d. Each ternary operator
-4. The person with the lowest points wins
-5. In the event of a draw, we’ll go to the judges, who will make a decision based on:
-a. Elegance
-b. Readability
-c. Future-proofing
 
 
 Challenge 2:
