@@ -3,7 +3,7 @@
 
 {
 
-"name": "woodj22/StaffChecksum",
+"name": "woodj22/MonthlyChallenge",
     "description": "calculate the suffix letter of a staff number.",
     "keywords": ["laravel"],
     "version": "master",
@@ -16,10 +16,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "woodj22\\StaffChecksum\\": "src/"
+            "woodj22\\MonthlyChallenge\\": "src/"
         },
       "psr-0" : {
-      "woodj22\\StaffChecksum\\" : "src/"
+      "woodj22\\MonthlyChallenge\\" : "src/"
     }
     },
     "minimum-stability": "stable"

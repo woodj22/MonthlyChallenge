@@ -6,18 +6,28 @@
  * Time: 22:37
  */
 
-namespace woodj22\StaffChecksum\CheckSum;
+namespace woodj22\MonthlyChallenge\CheckSum;
+
 class StaffChecksum {
 
     protected $checksumCode;
     protected $staffNumber;
 
+
+    public function calculateChecksum($staffNumber , $checkSumCode = [7,5,3,1,11,13])
+    {
+        $this->validateNumber($checkSumCode,staffNumberLength);
+        $this->validateNumber($staffNumber,staffNumberLength);
+        $checksumKey = $this->calculateChecksumNumber($staffNumber,$checkSumCode);
+        $alphabet = $this->calculateAlphabet(["C","G","I","M","O","Q","U","V","Z"]);
+        return $alphabet[$checksumKey];
+
+    }
+
+
     public function setStaffNumber($staffNumber){
 
-
         $this->staffNumber = $staffNumber;
-
-
     }
 
     public function setChecksumCode ($checksumCode) {
@@ -27,17 +37,6 @@ class StaffChecksum {
     }
 
 
-    public function calculateChecksum($staffNumber ,$checkSumCode = [7,5,3,1,11,13])
-
-    {
-
-        $this->validateNumber($checkSumCode,staffNumberLength);
-        $this->validateNumber($staffNumber,staffNumberLength);
-        $checksumKey = $this->calculateChecksumNumber($staffNumber,$checkSumCode);
-        $alphabet = $this->calculateAlphabet(["C","G","I","M","O","Q","U","V","Z"]);
-        return $alphabet[$checksumKey];
-
-    }
 
 
     private function calculateChecksumNumber($staffNumber,$checksumCode)
@@ -94,7 +93,7 @@ class StaffChecksum {
 // $input = $_GET['input'];
 // $staffNumber = $input;
 // $checkSumCode =[7,5,3,1,11,13];
-// $m = new StaffChecksum();
+// $m = new MonthlyChallenge();
 // $m->calculateChecksum($staffNumber,$checkSumCode);
 
 
