@@ -45,7 +45,7 @@ and as it is not ao repository on pacakgist add this to the repositories array:
 Run `composer update`  to finalize.
 
 ## Usage
-to make simple buisness calculations as easy as possible with one simple composer module. 
+To get stuff done. Simple buisness calcuations.
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
