@@ -1,7 +1,7 @@
 <snippet>
   <content>
 # MonthlyChallenge
-Every month, a team  coding challenge is set. the rules are :
+Every month, a team  coding challenge is set. The rules are :
 
 1. Write a small application to meet the test criteria in your chosen language:
 a. Angular and Javascript
@@ -55,6 +55,6 @@ to make simple buisness calculations as easy as possible with one simple compose
 
 ## Credits
 J Wood
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
