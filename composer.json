@@ -4,7 +4,7 @@
 {
 
 "name": "woodj22/MonthlyChallenge",
-    "description": "calculate the suffix letter of a staff number.",
+    "description": "All monthly coding challenges in one easy to use composer module.",
     "keywords": ["laravel"],
     "version": "master",
     "license": "Public",
