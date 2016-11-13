@@ -1,13 +1,13 @@
 <snippet>
   <content>
-# ${1:MnthlyChallenge}
+# MonthlyChallenge
 Every month, a team  coding challenge is set. the rules are :
 
 
 
 Team Coding Challenge
 Rules:
-1. You need to write a small application to meet the test criteria in your chosen language:
+1. Write a small application to meet the test criteria in your chosen language:
 a. Angular and Javascript
 b. Objective-C
 c. PHP
@@ -25,7 +25,7 @@ c. Future-proofing
 
 ## Installation
 
-To use, please add this requirement to your `composer.json` requirements file. 
+Add this requirement to your `composer.json` requirements file. 
 
 ``` 
 
